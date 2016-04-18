@@ -8,7 +8,7 @@
     <header class="main-header">
       <div class="container">
         <div class="main-header-logo">
-          <a href="#">На главную</a>
+          <img src="img/header-logo.png" width="50" height="20" alt="Барбершоп Бородинский">
         </div>
         <nav class="main-navigation">
           <ul>
@@ -28,8 +28,8 @@
       <header class="catalog-header">
         <h1>Средства для ухода</h1>
         <ul class="breadcrumb">
-          <li>Главная</li>
-          <li>Магазин</li>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
           <li class="active">Средства ухода</li>
         </ul>
       </header>
@@ -39,18 +39,18 @@
 
             <div class="filter-group-title">Производители:</div>
 
-            <input type="checkbox" name="supplier-1" id="supplier-1" class="type" checked>
-            <label for="supplier-1">Baxter of California</label>
-            <input type="checkbox" name="supplier-2" id="supplier-2" class="type">
-            <label for="supplier-2">Mr Natty</label>
-            <input type="checkbox" name="supplier-3" id="supplier-3" class="type" checked>
-            <label for="supplier-3">Suavecito</label>
-            <input type="checkbox" name="supplier-4" id="supplier-4" class="type">
-            <label for="supplier-4">Mallin+Goetz</label>
-            <input type="checkbox" name="supplier-5" id="supplier-5" class="type">
-            <label for="supplier-5">Murray's</label>
-            <input type="checkbox" name="supplier-6" id="supplier-6" class="type" checked>
-            <label for="supplier-6">American Crew</label>
+            <input type="checkbox" name="sup-baxter" id="sup-baxter" checked>
+            <label for="sup-baxter">Baxter of California</label>
+            <input type="checkbox" name="sup-natty" id="sup-natty">
+            <label for="sup-natty">Mr Natty</label>
+            <input type="checkbox" name="sup-suavec" id="sup-suavec" checked>
+            <label for="sup-suavec">Suavecito</label>
+            <input type="checkbox" name="sup-mallin" id="sup-mallin">
+            <label for="sup-mallin">Mallin+Goetz</label>
+            <input type="checkbox" name="sup-murray" id="sup-murray">
+            <label for="sup-murray">Murray's</label>
+            <input type="checkbox" name="sup-american" id="sup-american" checked>
+            <label for="sup-american">American Crew</label>
 
             <div class="filter-group-title">Группы товаров:</div>
 
@@ -65,84 +65,90 @@
           </form>
         </div>
         <div class="catalog-items">
-          <article class="catalog-item">
+          <div class="catalog-item">
             <a href="#">
               <img src="img/item-1.jpg" width="70" height="50" alt="">
             </a>
             <a class="item-name" href="#">
               Набор для путешествий
-              <br>
-              "Baxter of California"
+              <span class="item-sup">"Baxter of California"</span>
             </a>
-            <div class="item-price">2900руб.</div>
-            <a class="item-buy-action" href="#">Купить</a>
-          </article>
-          <article class="catalog-item">
+            <div class="item-bar">
+              <div class="item-price">2900руб.</div>
+              <a class="item-buy-action" href="#">Купить</a>
+            </div>
+          </div>
+          <div class="catalog-item">
             <a href="#">
               <img src="img/item-2.jpg" width="70" height="50" alt="">
             </a>
             <a class="item-name" href="#">
               Увлажнящий кондиционер
-              <br>
-              "Baxter of California"
+              <span class="item-sup">"Baxter of California"</span>
             </a>
-            <div class="item-price">750руб.</div>
-            <a class="item-buy-action" href="#">Купить</a>
-          </article>
-          <article class="catalog-item">
+            <div class="item-bar">
+              <div class="item-price">750руб.</div>
+              <a class="item-buy-action" href="#">Купить</a>
+            </div>
+          </div>
+          <div class="catalog-item">
             <a href="">
               <img src="img/item-3.jpg" width="70" height="50" alt="">
             </a>
             <a class="item-name" href="#">
               Гель для волос
-              <br>
-              "SUAVECITO"
+              <span class="item-sup">"SUAVECITO"</span>
             </a>
-            <div class="item-price">290руб.</div>
-            <a class="item-buy-action" href="#">Купить</a>
-          </article>
-          <article class="catalog-item">
+            <div class="item-bar">
+              <div class="item-price">290руб.</div>
+              <a class="item-buy-action" href="#">Купить</a>
+          </div>
+        </div>
+          <div class="catalog-item">
             <a href="">
               <img src="img/item-4.jpg" width="70" height="50" alt="">
             </a>
             <a class="item-name" href="#">
               Глина для укладки волос
-              <br>
-              "American Crew"
+              <span class="item-sup">"American Crew"</span>
             </a>
-            <div class="item-price">500руб.</div>
-            <a class="item-buy-action" href="#">Купить</a>
-          </article>
-          <article class="catalog-item">
+            <div class="item-bar">
+              <div class="item-price">500руб.</div>
+              <a class="item-buy-action" href="#">Купить</a>
+            </div>
+          </div>
+          <div class="catalog-item">
             <a href="">
               <img src="img/item-5.jpg" width="70" height="50" alt="">
             </a>
             <a class="item-name" href="#">
               Гель для волос
-              <br>
-              "American Crew"
+              <span class="item-sup">"American Crew"</span>
             </a>
-            <div class="item-price">300руб.</div>
-            <a class="item-buy-action" href="#">Купить</a>
-          </article>
-          <article class="catalog-item">
+            <div class="item-bar">
+              <div class="item-price">300руб.</div>
+              <a class="item-buy-action" href="#">Купить</a>
+          </div>
+        </div>
+          <div class="catalog-item">
             <a href="">
               <img src="img/item-6.jpg" width="70" height="50" alt="">
             </a>
             <a class="item-name" href="#">
               Набор для бритья
-              <br>
-              "Baxter of California"
+              <span class="item-sup">"Baxter of California"</span>
             </a>
-            <div class="item-price">3900руб.</div>
-            <a class="item-buy-action" href="#">Купить</a>
-          </article>
-          <div class="catalog-slider">
-            <a class="catalog-page" href="#">1</a>
-            <a class="catalog-page catalog-page-active" href="#">2</a>
-            <a class="catalog-page" href="#">3</a>
-            <a class="catalog-page" href="#">4</a>
+            <div class="item-bar">
+              <div class="item-price">3900руб.</div>
+              <a class="item-buy-action" href="#">Купить</a>
+            </div>
           </div>
+          <ul class="pagination">
+            <li><a class="catalog-page" href="#">1</a></li>
+            <li><a class="catalog-page catalog-page-active" href="#">2</a></li>
+            <li><a class="catalog-page" href="#">3</a></li>
+            <li><a class="catalog-page" href="#">4</a></li>
+          </ul>
         </div>
       </div>
     </main>
@@ -155,13 +161,13 @@
           Телефон: +7 (812) 666-02-66
         </section>
         <section class="footer-social">
-          <p>Давайте дружить!</p>
+        <b>Давайте дружить!</b>
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </section>
         <section class="footer-copyright">
-          <p>Разработано:</p>
+          <span>Разработано:</span>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>
